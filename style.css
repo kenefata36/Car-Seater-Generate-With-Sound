@@ -1,0 +1,88 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+#main-car-seat{
+  position: fixed;
+   display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100vh;
+  margin: 0;
+  z-index: 350;
+}
+.car-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  overflow: scroll;
+  height: 350px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.seat {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.seat.driver {
+  background-color: #28a745;
+}
+.passenger-player {
+  background-color: #ff9900;
+} 
+.seat.rear {
+  background-color: #17a2b8;
+}
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  margin: 5px 0;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #a71d2a;
+}
