@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Flotaing Game On Car Drive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div id="main-car-seat">
+      <div class="car-layout">
+    <center><h2>SEAT CAR PLAYER</h2></center>
+    <div class="row">
+      <div class="seat passenger-player">PASSENGER</div>
+      <div class="seat driver">DRIVER</div>
+    </div>
+    <div class="row">
+      <div class="seat rear left-player">SEAT PLAYER</div>
+      <div class="seat rear center-player">SEAT PLAYER</div>
+    </div>
+    <div class="row">
+        <div class="seat rear Right-player">SEAT PLAYER</div>
+      <div class="seat rear content-player">SEAT PLAYER</div>
+    </div>
+    <p style="color: lime;">Your Driver, To Use steerings and transmission</p>
+    <center><p>List: <span id="nameCount">1</span>/6</p></center>
+    <div id="message-seat-red" style="color: red;"></div>
+    Note:
+    The Players online are green seat and Passenger. this passenger on join cannot be to passenger view
+    This Empty Player or left the game are Blue seat.
+    Maximum 5/5 lists Players In the car load, Players Not enough car load exceeding 6/5 - 10/5 can cause your car to be difficult to move and lagging.
+    <br>
+     <input class="input-text" type="text" id="nameInput" placeholder="Add Player/Mobs">
+    <button class="button" id="addButton" onclick="setTimeout(switchtocase, 500)">Add/Joining Player</button>
+    <ul id="nameList">
+        <li>Your Player Drive<p style="color: green;">Driver</p></li>
+    </ul> 
+    <hr>
+    <h2>BINNER FOR CARS</h2>
+    <input id="hornBtn" type="button" value="Horn" name="horncar (Press to Long button)">
+    <label for="horncar">HornCar</label>
+    <nav><button id="navbutton" onclick="document.getElementById('basuri1').play()">Basuri 1</button> <button id="navbutton" onclick="document.getElementById('basuri2').play()">Basuri 2</button></nav>
+    <nav><button id="navbutton" onclick="document.getElementById('basuri3').play()">Basuri 3</button> <button id="navbutton" onclick="document.getElementById('basuri4').play()">Basuri 4</button></nav>
+    <center><h4>Arrow car</h4></center>
+   <!-- Indicator Button -->
+<button id="indicator" class="indicator-btn">&#8594;</button>
+
+<!-- Audio (replace with your own sound file) -->
+<audio id="indicatorSound" preload="auto">
+    <source src="Ford indicator sound.mp4" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+  </div>
+  <audio id="hornSound" src="car-horn-2.mp3"></audio>
+  <audio src="basuri-mengular.mp3" id="basuri2"></audio>
+  <audio src="basuri-v3.mp3" id="basuri3"></audio>
+  <audio src="basuri-2.mp3" id="basuri4"></audio>
+  <audio src="basuri-ngular-remix-panda-mboiss.mp3" id="basuri1"></audio>
+  <script src="indicator.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
